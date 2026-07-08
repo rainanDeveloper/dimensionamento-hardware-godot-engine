@@ -1,5 +1,4 @@
 Hardware sizing for the software Godot Engine
-
 ---
 
 # System requirements
@@ -24,7 +23,7 @@ Limitation: the teacher said we can't select any processor before 2021
 
 i5-11600K vs Ryzen 5 5600
 
-Ryzen 5 5600 ouperforms by 10.4% and the consumption is lower (65 Watts vs 125 Watts).
+The Ryzen 5 5600 outperforms the Intel Core i5-11600K by approximately 10.4% according to Technical City and the consumption is lower (65 Watts vs 125 Watts).
 
 The Ryzen 5 5600 provides larger cache capacity than the Core i5-11600K, with twice the L2 cache per core (512 KB vs 256 KB) and a significantly larger L3 cache (32 MB vs 12 MB). Larger caches can reduce the frequency of accesses to slower main memory, improving performance in workloads that repeatedly use the same data.
 
@@ -51,7 +50,7 @@ Since the selected processor is the AMD Ryzen 5 5600, an AM4 motherboard is requ
 
 Source: https://technical.city/en/cpu/Core-i5-11600K-vs-Ryzen-5-5600 (Socket AM4).
 
-Both B550 and PRO 565 has PCIe 4.0 compatibility among those compatible with AM4, but only B550 has suppport to overclocking, is widely available and has more variety.
+B550 has PCIe 4.0 compatibility among those compatible with AM4 and has suppport to overclocking, is widely available and has more variety.
 
 Source: https://www.amd.com/en/products/processors/chipsets/am4.html
 
@@ -61,11 +60,35 @@ Chosen motherboard: Gigabyte B550M AORUS ELITE - nice price among options (socke
 
 ### Memory
 
-The godotengine websites recommended 8GB for the Native editor, and 12 GB to the web editor. Since i can have 16 GB in dual channel easyly with 2 8 GB memories, ii prefer to use 16GB in dual channel.
+The godotengine websites recommended 8GB for the Native editor, and 12 GB to the web editor. Since i can have 16 GB in dual channel easily with 2 8 GB memories, i prefer to use 16GB in dual channel.
 
-Chosen: KINGSTON FURY BEAST DIMM DDR4 8 GB 3200 MHZ
+Chosen: KINGSTON FURY BEAST DIMM DDR4 8 GB 3200 MHZ (2 x)
 
 Reason: Nice price among options.
 
-### 
+### GPU
 
+Chosen: NVIDIA GeForce GTX 1050
+
+Reason: Recommended on Godot Engine system requirements and full compatible
+
+### Storage
+
+Chosen: SSD NVME m.2 500GB (About BRL 500.00 - 600.00 )
+
+Reason: Godot requires only about 1.5 GB of storage, but a 500 GB NVMe SSD provides sufficient space for the operating system, development tools, project files, exported builds, and future expansion while offering fast loading and compilation times.
+
+### Power Supply
+
+Given the consumption:
+
+Ryzen 5 5600: approximately 90 W under full load
+GTX 1050: approximately 75 W
+Motherboard: approximately 40 W
+Memory and SSD: approximately 10 W
+
+~ 90 + ~ 75 + ~ 40 + ~ 10 = ~ 215 Watts
+
+Total estimated consumption is around 215 W. A 500 W power supply provides sufficient headroom for system stability, component aging, and possible future upgrades.
+
+Chosen: 500 Watts power source (About BRL 200.00)
