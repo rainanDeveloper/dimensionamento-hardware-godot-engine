@@ -64,6 +64,8 @@ Requisitos **recomendados** para o editor nativo (PC desktop/laptop):
 - **8 GB de RAM** (mínimo do editor nativo).
 - **Vulkan 1.2** na GPU (suporte total exigido).
 
+A CPU, começamos com os dados (Core i5-6600K vs Ryzen 5 1600), mas devido ao ano de lançamento, fomos para os equivalentes após 2021: Core i5-11600K (2021) vs Ryzen 5 5600 (2022).
+
 ---
 
 ## Componentes escolhidos
@@ -88,13 +90,13 @@ Fonte do comparativo: [Technical City — Core i5-11600K vs Ryzen 5 5600](https:
 **Justificativas da escolha:**
 
 - **Desempenho agregado ~10,4% superior** ao do i5-11600K, segundo o score agregado da Technical City (que reflete principalmente o Passmark).
-- **Caches maiores** (L2 de 512 KB por núcleo vs. 256 KB; L3 de 32 MB vs. 12 MB) reduzem a frequência de acessos à RAM (mais lenta), melhorando cargas que reutilizam os mesmos dados — como compilar projeto, rodar o editor e exportar *builds*.
-- **Litografia de 7 nm vs. 14 nm** → mais transistores na mesma área, maior eficiência energética e menor geração de calor.
-- **Consumo menor** (65 W de TDP vs. 125 W) → mais fácil de refrigerar e adequado a uma estação que roda cargas de desenvolvimento por longos períodos.
+- **Caches maiores** (L2 de 512 KB por núcleo vs. 256 KB; L3 de 32 MB vs. 12 MB) reduzem a frequência de acessos à RAM (mais lenta), melhorando cargas que reutilizam os mesmos dados, como compilar projeto, rodar o editor e exportar *builds*.
+- **Litografia de 7 nm vs. 14 nm** - mais transistores na mesma área, maior eficiência energética e menor geração de calor.
+- **Consumo menor** (65 W de TDP vs. 125 W) - mais fácil de refrigerar e adequado a uma estação que roda cargas de desenvolvimento por longos períodos.
 - **Custo quase pela metade** (~R$ 975 vs. ~R$ 1.944 — ~99% mais barato).
-- Atende com folga o requisito do Godot (4 núcleos x86_64 com SSE4.2) e respeita a regra de "nada antes de 2021" (lançado em 2022).
+- Atende com folga o requisito do Godot (de 4 núcleos x86_64 com SSE4.2) tendo 6 núcleos e 12 threads.
 
-**Nuance honesta (fortalece a escolha):** o Ryzen **não** vence em tudo. Nos testes individuais da mesma página:
+**Nuance honesta:** o Ryzen **não** vence em tudo. Nos testes individuais da mesma página:
 
 - GeekBench 5 *single-core*: o **Intel vence por ~7,6%**.
 - GeekBench 5 *multi-core*: **empate técnico** (Ryzen +0,4%).
@@ -108,7 +110,7 @@ Preços de referência (Amazon BR — reconferir próximo à data): [Ryzen 5 560
 
 **Escolhida: Gigabyte B550M AORUS ELITE** (Socket AM4, chipset B550)
 
-Cadeia lógica de decisão: **processador define o socket → socket define os chipsets compatíveis → chipset define o modelo.**
+Cadeia lógica de decisão: **processador define o socket > socket define os chipsets compatíveis > chipset define o modelo.**
 
 - **Socket AM4** — exigido pelo Ryzen 5 5600 (ver [Technical City](https://technical.city/en/cpu/Core-i5-11600K-vs-Ryzen-5-5600), campo *Socket AM4*).
 - **Chipset B550** — dentre os compatíveis com AM4 ([AMD — Chipsets AM4](https://www.amd.com/en/products/processors/chipsets/am4.html)):
@@ -116,7 +118,7 @@ Cadeia lógica de decisão: **processador define o socket → socket define os c
   - Suporta **overclock**.
   - É **amplamente disponível** e com boa variedade de modelos.
 - **Modelo Gigabyte B550M AORUS ELITE** — bom preço dentre as opções B550 / AM4.
-- **Coerência a verificar:** confirmar no manual da placa se o slot M.2 principal é PCIe 4.0 (Gen4) — em muitas B550, o segundo slot M.2, se existir, é Gen3 ou SATA.
+- **Suporte à PCIe no M.2 do NVME:** Primeiro slot de NVME M.2 tem suporte à PCIe 4.0, o que é relevante para o barramento com o SSD que selecionaremos depois.
 
 **Por que não a A520 (mais barata)?** A A520 **não** oferece PCIe 4.0 nem overclock — perderíamos a vantagem de banda do SSD NVMe e da comunicação com a GPU.
 
@@ -126,22 +128,21 @@ Cadeia lógica de decisão: **processador define o socket → socket define os c
 
 **Escolhida: 2 × Kingston Fury Beast DDR4 8 GB 3200 MHz (16 GB em dual channel)**
 
-- Requisito do Godot: **8 GB** (editor nativo) / 12 GB (editor web) — atendido com folga.
-- **16 GB no total** — com dois pentes de 8 GB alcança-se 16 GB facilmente, dobrando o requisito mínimo.
-- **Dual channel** (2×8 GB em vez de 1×16 GB) dobra a banda de comunicação com o processador — detalhe técnico acima do básico.
-- **3200 MHz é a frequência nativa suportada pelo Ryzen 5 5600** (ver especificação na [Technical City](https://technical.city/en/cpu/Core-i5-11600K-vs-Ryzen-5-5600)) → o kit roda na frequência nativa, **sem precisar de XMP/overclock de memória**.
+- Requisito do Godot: **8 GB** (editor nativo) / 12 GB (editor web) - atendido com folga.
+- **16 GB no total** - com dois pentes de 8 GB alcança-se 16 GB facilmente, dobrando o requisito mínimo.
+- **Dual channel** (2×8 GB em vez de 1×16 GB) dobra a banda de comunicação com o processador - detalhe técnico acima do básico.
+- **3200 MHz é a frequência nativa suportada pelo Ryzen 5 5600** (ver especificação na [Technical City](https://technical.city/en/cpu/Core-i5-11600K-vs-Ryzen-5-5600)) > o kit roda na frequência nativa, **sem precisar de XMP/overclock de memória**.
 - Escolha do modelo pelo bom preço entre as opções.
 
 ---
 
 ### GPU (Placa de vídeo)
 
-**Escolhida: NVIDIA GeForce GTX 1050** (arquitetura Pascal, 2016)
+**Escolhida: NVIDIA GeForce GTX 1050** (a exata descrita nos requistos do Godot)
 
 - **Suporte total a Vulkan 1.2** — requisito exigido pelo Godot.
 - É **literalmente o exemplo oficial** da [documentação do Godot](https://docs.godotengine.org/en/stable/about/system_requirements.html) para a GPU mínima recomendada.
 - Atende os renderizadores **Forward** e **Mobile** do motor.
-- A GTX 1050 é de 2016, mas isso **não é problema**: a restrição de data de 2021 vale **apenas para o processador**. A escolha ainda é tecnicamente sólida por ser o exemplo oficial do Godot.
 
 ---
 
@@ -152,7 +153,7 @@ Cadeia lógica de decisão: **processador define o socket → socket define os c
 - Requisito real do Godot é baixíssimo: **1,5 GB**.
 - **500 GB** é escolha de **conforto e futuro**, não de necessidade: comporta sistema operacional, ferramentas de desenvolvimento, arquivos de projeto, *builds* exportadas e expansão futura.
 - **NVMe (e não SATA)** foi escolhido pela **velocidade** — reduz diretamente o tempo de carregamento do editor e de exportação de *builds*, algo que se repete o tempo todo durante o desenvolvimento.
-- Aproveita o **PCIe 4.0** da placa-mãe B550.
+- Aproveita o **PCIe 4.0** da placa-mãe B550, aproveitando o máximo da velocidade no barramento.
 
 ---
 
@@ -179,33 +180,23 @@ Consumo estimado por componente:
 
 ### Cooler do processador
 
-**Escolhido: Cooler *stock* AMD Wraith Stealth (incluso com o Ryzen 5 5600)**
+**Escolhido: Cooler incluso com o Ryzen 5 5600**
 
-- O Ryzen 5 5600 **já acompanha** o cooler Wraith Stealth de fábrica — **custo adicional zero**.
+- O Ryzen 5 5600 **já acompanha** o cooler AMD Wraith Stealth de fábrica - **custo adicional zero**.
 - É suficiente para o TDP de **65 W** do processador em cargas de desenvolvimento, sem overclock agressivo.
-- Um cooler *aftermarket* só seria necessário para overclock pesado ou operação silenciosa — fora do escopo deste dimensionamento.
+- Um cooler adicional só seria necessário para overclock pesado ou operação silenciosa - fora do escopo para essa aplicação.
 
 ---
 
 ### Gabinete
 
-**Escolhido: Gabinete Mini Tower / Micro-ATX com boa ventilação** (~R$ 200–300)
+**Escolhido: Gabinete Mini - ATX/Micro - ATX, Fortrek** (~R$ 120–150)
 
 - **Compatível com placa-mãe Micro-ATX (mATX)** — formato da Gigabyte B550M AORUS ELITE.
 - **Espaço para a GPU** — a GTX 1050 é curta, cabe em praticamente qualquer gabinete.
 - **Fluxo de ar adequado** (com ao menos um fan frontal e um traseiro) — importante para dissipar o calor em uso prolongado de desenvolvimento.
 - **Baias/suportes** para SSD M.2 (na placa-mãe) e futura expansão de armazenamento.
 - Escolha por **custo-benefício**, priorizando ventilação e compatibilidade de formato em vez de estética.
-
----
-
-### Sistema operacional
-
-**Escolhido: Linux (distribuição lançada após 2020) ou Windows 10/11**
-
-- O Godot **suporta oficialmente** Windows 10, macOS 10.15 e Linux (distribuição pós-2020) — ver [requisitos oficiais](https://docs.godotengine.org/en/stable/about/system_requirements.html).
-- **Linux** é uma opção **sem custo de licença**, coerente com um projeto centrado em ferramenta *open-source* (o próprio Godot é open-source).
-- Alternativa: **Windows 10/11** caso a compatibilidade com outras ferramentas do fluxo de trabalho seja necessária.
 
 ---
 
@@ -223,21 +214,37 @@ Itens necessários para operar a máquina (não cobertos pelos requisitos do God
 
 ## Resumo final da configuração
 
-| Componente | Escolha | Preço (referência) |
-|---|---|---|
-| CPU | AMD Ryzen 5 5600 | R$ 974,66 |
-| Placa-mãe | Gigabyte B550M AORUS ELITE | a confirmar |
-| Memória | Kingston Fury Beast 2×8 GB 3200 MHz | a confirmar |
-| GPU | NVIDIA GeForce GTX 1050 | a confirmar |
-| Armazenamento | SSD NVMe M.2 500 GB | R$ 500–600 |
-| Fonte | 500 W (80+ Bronze) | ~R$ 200,00 |
-| Cooler | AMD Wraith Stealth (incluso) | R$ 0,00 |
-| Gabinete | Mini Tower Micro-ATX ventilado | R$ 200–300 |
-| Sistema operacional | Linux (pós-2020) ou Windows 10/11 | R$ 0,00 (Linux) |
-| Monitor | Full HD 23"–24" | R$ 700–900 |
-| Teclado + mouse | Conjunto com fio | R$ 100–200 |
+### Gabinete (torre) — componentes internos
 
-> ⚠️ Valores de placa-mãe, memória e GPU ainda em levantamento. Somando as estimativas, o **custo total** da máquina (sem periféricos) gira em torno de **R$ 2.500–3.000**, e com periféricos em torno de **R$ 3.300–4.100** — a reconferir próximo à data.
+| Componente | Escolha | Preço mínimo | Preço máximo |
+|---|---|---|---|
+| CPU | AMD Ryzen 5 5600 | R$ 974,66 | R$ 974,66 |
+| Placa-mãe | Gigabyte B550M AORUS ELITE | R$ 600,00 | R$ 800,00 |
+| Memória | Kingston Fury Beast 2×8 GB 3200 MHz | R$ 250,00 | R$ 350,00 |
+| GPU | NVIDIA GeForce GTX 1050 | R$ 500,00 | R$ 700,00 |
+| Armazenamento | SSD NVMe M.2 500 GB | R$ 500,00 | R$ 600,00 |
+| Fonte | 500 W (80+ Bronze) | R$ 200,00 | R$ 200,00 |
+| Cooler | AMD Wraith Stealth (incluso) | R$ 0,00 | R$ 0,00 |
+| Gabinete | Gabinete Mini - ATX/Micro - ATX, Fortrek | R$ 120,00 | R$ 150,00 |
+| **Subtotal (só a máquina)** | | **R$ 3.144,66** | **R$ 3.774,66** |
+
+### Periféricos
+
+| Componente | Escolha | Preço mínimo | Preço máximo |
+|---|---|---|---|
+| Monitor | Full HD 23"–24" | R$ 700,00 | R$ 900,00 |
+| Teclado + mouse | Conjunto com fio | R$ 100,00 | R$ 200,00 |
+| **Subtotal (periféricos)** | | **R$ 800,00** | **R$ 1.100,00** |
+
+### Total geral
+
+| | Preço mínimo | Preço máximo |
+|---|---|---|
+| Máquina (torre) | R$ 3.144,66 | R$ 3.774,66 |
+| Periféricos | R$ 800,00 | R$ 1.100,00 |
+| **TOTAL** | **R$ 3.944,66** | **R$ 4874,66** |
+
+> ⚠️ Os valores de placa-mãe, memória e GPU são **estimativas de faixa de mercado** e ainda estão em levantamento. Reconferir os preços (Amazon BR e demais varejistas) próximo à data da apresentação — os totais acima se ajustam conforme os valores finais.
 
 ---
 
