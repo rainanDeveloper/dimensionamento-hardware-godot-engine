@@ -204,9 +204,8 @@ Consumo estimado por componente:
 
 Itens necessários para operar a máquina (não cobertos pelos requisitos do Godot, mas indispensáveis na prática):
 
-- **Monitor Full HD (1080p), ~23"–24"** — resolução suficiente para o editor do Godot com bom espaço de trabalho e custo acessível (~R$ 700–900).
-- **Teclado + mouse** — periféricos básicos com fio, custo-benefício (~R$ 100–200 o conjunto). Um mouse com boa precisão ajuda no posicionamento de nós e edição de cenas.
-- **(Opcional) Headset/áudio** — útil para desenvolvimento e teste de áudio nos jogos.
+- **Monitor LG 24MS500 24” IPS 100Hz Full HD HDMI 2x** — resolução suficiente para o editor do Godot com bom espaço de trabalho e custo acessível (~R$ 549,00), checar na [Amazon](https://www.amazon.com.br/Monitor-Gamer-LG-24MS500-100Hz/dp/B0DF2WSGF6?ufe=app_do%3Aamzn1.fos.25548f35-0de7-44b3-b28e-0f56f3f96147).
+- **Combo Teclado e Mouse sem fio Logitech MK235 com Conexão USB, Pilhas Inclusas e Layout ABNT2: Teclado + mouse** — periféricos básicos com fio, custo-benefício (~R$ 135,99 o conjunto). Não existem grandes requisitos para o mouse e teclado. Checar preço na [Amazon](https://www.amazon.com.br/Teclado-Nanoreceptor-Inclusas-Logitech-Teclados/dp/B07643MPGS?s=computers&ufe=app_do%3Aamzn1.fos.db68964d-7c0e-4bb2-a95c-e5cb9e32eb12)
 
 > Os periféricos foram dimensionados pelo **custo-benefício**, sem exigências especiais além de conforto e confiabilidade — o Godot não impõe requisitos específicos de entrada/saída.
 
@@ -219,14 +218,14 @@ Itens necessários para operar a máquina (não cobertos pelos requisitos do God
 | Componente | Escolha | Preço mínimo | Preço máximo |
 |---|---|---|---|
 | CPU | AMD Ryzen 5 5600 | R$ 974,66 | R$ 974,66 |
-| Placa-mãe | Gigabyte B550M AORUS ELITE | R$ 600,00 | R$ 800,00 |
-| Memória | Kingston Fury Beast 2×8 GB 3200 MHz | R$ 250,00 | R$ 350,00 |
-| GPU | NVIDIA GeForce GTX 1050 | R$ 500,00 | R$ 700,00 |
-| Armazenamento | SSD NVMe M.2 500 GB | R$ 500,00 | R$ 600,00 |
+| Placa-mãe | Gigabyte B550M AORUS ELITE | R$ 549,00 | R$ 549,00 |
+| Memória | Kingston Fury Beast 2×8 GB 3200 MHz | R$ 898,00 | R$ 898,00 |
+| GPU | NVIDIA GeForce GTX 1050 | R$ 1317,00 | R$ 1317,00 |
+| Armazenamento | SSD NVMe M.2 500 GB | R$ 600,00 | R$ 600,00 |
 | Fonte | 500 W (80+ Bronze) | R$ 200,00 | R$ 200,00 |
 | Cooler | AMD Wraith Stealth (incluso) | R$ 0,00 | R$ 0,00 |
 | Gabinete | Gabinete Mini - ATX/Micro - ATX, Fortrek | R$ 120,00 | R$ 150,00 |
-| **Subtotal (só a máquina)** | | **R$ 3.144,66** | **R$ 3.774,66** |
+| **Subtotal (só a máquina)** | | **R$ 4.658,66** | **R$ 4.688,66** |
 
 ### Periféricos
 
