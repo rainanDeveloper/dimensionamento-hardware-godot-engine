@@ -160,7 +160,7 @@ Cadeia lógica de decisão: **processador define o socket > socket define os chi
 
 ### Fonte de alimentação
 
-**Escolhida: Fonte de 500 W** (~R$ 200,00), preferencialmente com certificação **80+ (mínimo Bronze)**
+**Escolhida: Fonte de 250 W** (~R$ 120,00), preferencialmente com certificação **80+ (mínimo Bronze)**
 
 Consumo estimado por componente:
 
@@ -174,7 +174,8 @@ Consumo estimado por componente:
 
 **Justificativas:**
 
-- **500 W é mais que o dobro** do consumo real estimado (~215 W) → margem para estabilidade, picos de consumo, envelhecimento dos componentes e upgrades futuros — prática padrão em dimensionamento de fonte.
+- **250 W cobre o consumo real estimado (~215 W)** — atende a carga máxima projetada da máquina com o menor custo de fonte.
+- **Nuance honesta:** a margem é apertada. Com ~215 W estimados, a fonte operaria em torno de **86% da capacidade** em carga máxima, deixando pouco espaço para picos de consumo, envelhecimento dos componentes e upgrades futuros. É o oposto de uma fonte superdimensionada; a escolha prioriza **custo** sobre folga. Para maior tranquilidade (carga típica em ~50–60% da fonte), uma fonte de ~400 W seria mais confortável, com pequeno acréscimo de custo.
 - **Certificação 80+ (mínimo Bronze)** — critério de eficiência energética valorizado em dimensionamento; reduz desperdício e aquecimento.
 
 ---
@@ -223,10 +224,10 @@ Itens necessários para operar a máquina (não cobertos pelos requisitos do God
 | Memória | Kingston Fury Beast 2×8 GB 3200 MHz | R$ 898,00 | R$ 898,00 |
 | GPU | AMD Radeon RX 460 | R$ 555,00 | R$ 555,00 |
 | Armazenamento | SSD NVMe M.2 500 GB | R$ 600,00 | R$ 600,00 |
-| Fonte | 500 W (80+ Bronze) | R$ 200,00 | R$ 200,00 |
+| Fonte | 250 W (80+ Bronze) | R$ 120,00 | R$ 120,00 |
 | Cooler | AMD Wraith Stealth (incluso) | R$ 0,00 | R$ 0,00 |
 | Gabinete | Gabinete Mini - ATX/Micro - ATX, Fortrek | R$ 120,00 | R$ 150,00 |
-| **Subtotal (só a máquina)** | | **R$ 3.896,66** | **R$ 3.926,66** |
+| **Subtotal (só a máquina)** | | **R$ 3.816,66** | **R$ 3.846,66** |
 
 ### Periféricos
 
@@ -240,9 +241,9 @@ Itens necessários para operar a máquina (não cobertos pelos requisitos do God
 
 | | Preço mínimo | Preço máximo |
 |---|---|---|
-| Máquina (torre) | R$ 3.896,66 | R$ 3.926,66 |
+| Máquina (torre) | R$ 3.816,66 | R$ 3.846,66 |
 | Periféricos | R$ 800,00 | R$ 1.100,00 |
-| **TOTAL** | **R$ 4.696,66** | **R$ 5.026,66** |
+| **TOTAL** | **R$ 4.616,66** | **R$ 4.946,66** |
 
 > ⚠️ Os valores de placa-mãe, memória e GPU são **estimativas de faixa de mercado** e ainda estão em levantamento. Reconferir os preços (Amazon BR e demais varejistas) próximo à data da apresentação — os totais acima se ajustam conforme os valores finais.
 
@@ -259,8 +260,8 @@ Itens necessários para operar a máquina (não cobertos pelos requisitos do God
 - **"Por que RX 460 se é uma GPU de 2016?"**
   É o **exemplo oficial** da documentação do Godot para a GPU mínima recomendada (lado AMD), com suporte total a Vulkan 1.2 via GCN 4.0. A restrição de data de 2021 vale **apenas para o processador**, então a GPU de 2016 é permitida. Além disso, saiu bem mais barata que a GTX 1050 (R$ 555,00), reduzindo o custo total.
 
-- **"Por que 500 W se o consumo é só ~215 W?"**
-  Margem de segurança para estabilidade, picos de consumo, envelhecimento de componentes e upgrades futuros — prática padrão em dimensionamento de fonte.
+- **"Por que 250 W se o consumo estimado é ~215 W?"**
+  A fonte de 250 W cobre a carga máxima estimada (~215 W) pelo menor custo. A margem é apertada (a fonte operaria a ~86% em carga máxima), então é uma escolha que prioriza custo em vez de folga; uma fonte de ~400 W daria mais margem para picos, envelhecimento e upgrades.
 
 - **"Por que não a placa-mãe A520, mais barata?"**
   A A520 não oferece PCIe 4.0 nem overclock — perderíamos a banda do SSD NVMe e da GPU.
