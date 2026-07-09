@@ -160,7 +160,7 @@ Cadeia lógica de decisão: **processador define o socket > socket define os chi
 
 ### Fonte de alimentação
 
-**Escolhida: Fonte de 250 W** (~R$ 120,00), preferencialmente com certificação **80+ (mínimo Bronze)**
+**Escolhida: Fonte de 250 W** (~R$ 120,00)**
 
 Consumo estimado por componente:
 
@@ -175,10 +175,7 @@ Consumo estimado por componente:
 **Justificativas:**
 
 - **250 W cobre o consumo real estimado (~215 W)** — atende a carga máxima projetada da máquina com o menor custo de fonte.
-- **Nuance honesta:** a margem é apertada. Com ~215 W estimados, a fonte operaria em torno de **86% da capacidade** em carga máxima, deixando pouco espaço para picos de consumo, envelhecimento dos componentes e upgrades futuros. É o oposto de uma fonte superdimensionada; a escolha prioriza **custo** sobre folga. Para maior tranquilidade (carga típica em ~50–60% da fonte), uma fonte de ~400 W seria mais confortável, com pequeno acréscimo de custo.
-- **Certificação 80+ (mínimo Bronze)** — critério de eficiência energética valorizado em dimensionamento; reduz desperdício e aquecimento.
 
----
 
 ### Cooler do processador
 
@@ -224,7 +221,7 @@ Itens necessários para operar a máquina (não cobertos pelos requisitos do God
 | Memória | Kingston Fury Beast 2×8 GB 3200 MHz | R$ 898,00 | R$ 898,00 |
 | GPU | AMD Radeon RX 460 | R$ 555,00 | R$ 555,00 |
 | Armazenamento | SSD NVMe M.2 500 GB | R$ 600,00 | R$ 600,00 |
-| Fonte | 250 W (80+ Bronze) | R$ 120,00 | R$ 120,00 |
+| Fonte | 250 W  | R$ 120,00 | R$ 120,00 |
 | Cooler | AMD Wraith Stealth (incluso) | R$ 0,00 | R$ 0,00 |
 | Gabinete | Gabinete Mini - ATX/Micro - ATX, Fortrek | R$ 120,00 | R$ 150,00 |
 | **Subtotal (só a máquina)** | | **R$ 3.816,66** | **R$ 3.846,66** |
