@@ -138,11 +138,12 @@ Cadeia lógica de decisão: **processador define o socket > socket define os chi
 
 ### GPU (Placa de vídeo)
 
-**Escolhida: NVIDIA GeForce GTX 1050** (a exata descrita nos requistos do Godot)
+**Escolhida: AMD Radeon RX 460** (a exata descrita nos requistos do Godot)
 
-- **Suporte total a Vulkan 1.2** — requisito exigido pelo Godot.
-- É **literalmente o exemplo oficial** da [documentação do Godot](https://docs.godotengine.org/en/stable/about/system_requirements.html) para a GPU mínima recomendada.
+- **Suporte total a Vulkan 1.2** — requisito exigido pelo Godot, via arquitetura **GCN 4.0**.
+- É **literalmente o exemplo oficial** da [documentação do Godot](https://docs.godotengine.org/en/stable/about/system_requirements.html) para a GPU mínima recomendada (par direto da GTX 1050 no lado AMD).
 - Atende os renderizadores **Forward** e **Mobile** do motor.
+- **Preço (Amazon BR): R$ 555,00** — bem mais barata que a GTX 1050 nas cotações atuais, reduzindo o custo total da máquina sem perder o atendimento ao requisito.
 
 ---
 
@@ -166,7 +167,7 @@ Consumo estimado por componente:
 | Componente | Consumo aprox. |
 |---|---|
 | CPU (Ryzen 5 5600) | ~90 W (carga máxima) |
-| GPU (GTX 1050) | ~75 W |
+| GPU (RX 460) | ~75 W |
 | Placa-mãe | ~40 W |
 | Memória + SSD | ~10 W |
 | **Total estimado** | **~215 W** |
@@ -193,7 +194,7 @@ Consumo estimado por componente:
 **Escolhido: Gabinete Mini - ATX/Micro - ATX, Fortrek** (~R$ 120–150)
 
 - **Compatível com placa-mãe Micro-ATX (mATX)** — formato da Gigabyte B550M AORUS ELITE.
-- **Espaço para a GPU** — a GTX 1050 é curta, cabe em praticamente qualquer gabinete.
+- **Espaço para a GPU** — a RX 460 é curta, cabe em praticamente qualquer gabinete.
 - **Fluxo de ar adequado** (com ao menos um fan frontal e um traseiro) — importante para dissipar o calor em uso prolongado de desenvolvimento.
 - **Baias/suportes** para SSD M.2 (na placa-mãe) e futura expansão de armazenamento.
 - Escolha por **custo-benefício**, priorizando ventilação e compatibilidade de formato em vez de estética.
@@ -220,12 +221,12 @@ Itens necessários para operar a máquina (não cobertos pelos requisitos do God
 | CPU | AMD Ryzen 5 5600 | R$ 974,66 | R$ 974,66 |
 | Placa-mãe | Gigabyte B550M AORUS ELITE | R$ 549,00 | R$ 549,00 |
 | Memória | Kingston Fury Beast 2×8 GB 3200 MHz | R$ 898,00 | R$ 898,00 |
-| GPU | NVIDIA GeForce GTX 1050 | R$ 1317,00 | R$ 1317,00 |
+| GPU | AMD Radeon RX 460 | R$ 555,00 | R$ 555,00 |
 | Armazenamento | SSD NVMe M.2 500 GB | R$ 600,00 | R$ 600,00 |
 | Fonte | 500 W (80+ Bronze) | R$ 200,00 | R$ 200,00 |
 | Cooler | AMD Wraith Stealth (incluso) | R$ 0,00 | R$ 0,00 |
 | Gabinete | Gabinete Mini - ATX/Micro - ATX, Fortrek | R$ 120,00 | R$ 150,00 |
-| **Subtotal (só a máquina)** | | **R$ 4.658,66** | **R$ 4.688,66** |
+| **Subtotal (só a máquina)** | | **R$ 3.896,66** | **R$ 3.926,66** |
 
 ### Periféricos
 
@@ -239,9 +240,9 @@ Itens necessários para operar a máquina (não cobertos pelos requisitos do God
 
 | | Preço mínimo | Preço máximo |
 |---|---|---|
-| Máquina (torre) | R$ 3.144,66 | R$ 3.774,66 |
+| Máquina (torre) | R$ 3.896,66 | R$ 3.926,66 |
 | Periféricos | R$ 800,00 | R$ 1.100,00 |
-| **TOTAL** | **R$ 3.944,66** | **R$ 4874,66** |
+| **TOTAL** | **R$ 4.696,66** | **R$ 5.026,66** |
 
 > ⚠️ Os valores de placa-mãe, memória e GPU são **estimativas de faixa de mercado** e ainda estão em levantamento. Reconferir os preços (Amazon BR e demais varejistas) próximo à data da apresentação — os totais acima se ajustam conforme os valores finais.
 
@@ -255,8 +256,8 @@ Itens necessários para operar a máquina (não cobertos pelos requisitos do God
 - **"O Ryzen é melhor em tudo?"**
   Não — em *single-core* o Intel vence (~7,6%); a vantagem do Ryzen aparece no **agregado** e no **multi-core**, que é o cenário mais relevante para compilar e exportar projetos.
 
-- **"Por que GTX 1050 se é uma GPU de 2016?"**
-  É o **exemplo oficial** da documentação do Godot para a GPU mínima recomendada, com suporte total a Vulkan 1.2. A restrição de data de 2021 vale **apenas para o processador**, então a GPU de 2016 é permitida.
+- **"Por que RX 460 se é uma GPU de 2016?"**
+  É o **exemplo oficial** da documentação do Godot para a GPU mínima recomendada (lado AMD), com suporte total a Vulkan 1.2 via GCN 4.0. A restrição de data de 2021 vale **apenas para o processador**, então a GPU de 2016 é permitida. Além disso, saiu bem mais barata que a GTX 1050 (R$ 555,00), reduzindo o custo total.
 
 - **"Por que 500 W se o consumo é só ~215 W?"**
   Margem de segurança para estabilidade, picos de consumo, envelhecimento de componentes e upgrades futuros — prática padrão em dimensionamento de fonte.
