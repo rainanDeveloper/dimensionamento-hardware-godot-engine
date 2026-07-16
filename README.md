@@ -65,7 +65,7 @@ Fonte do comparativo: [Technical City — Core i5-11400 vs Ryzen 5 5500](https:/
 | Litografia                      | **7 nm**       | 14 nm        |
 | TDP (consumo)                   | **65 W**       | 125 W        |
 | Score agregado (Technical City) | **12,58**      | 11,40        |
-| Preço (Amazon BR)              | **R\$ 974,66** | R\$ 1.944,27 |
+| Preço (Amazon BR)              | **R\$ 560,00** | R\$ 1.944,27 |
 
 **Justificativas da escolha:**
 
@@ -92,7 +92,7 @@ Preços de referência: [Ryzen 5 5500 (Amazon BR)](https://www.amazon.com.br/Pro
 
 ### Placa-mãe
 
-**Escolhida: Gigabyte A520M K V2** (Socket AM4, chipset A520) — [Amazon BR (R$ 354,00)](https://www.amazon.com.br/Placa-Gigabyte-A520m-V2-Micro/dp/B0BXFBN121)
+**Escolhida: Gigabyte A520M K V2** (Socket AM4, chipset A520) — [Amazon BR (R$ 373,00)](https://www.amazon.com.br/Placa-Gigabyte-A520m-V2-Micro/dp/B0BXFBN121)
 
 ![1784061434180](assets/placa-mae-gigabyte-a520M.png)
 
@@ -133,7 +133,9 @@ Cadeia lógica de decisão: **processador define o socket > socket define os chi
 
 ### Armazenamento
 
-**Escolhido: SSD NVMe M.2 500 GB** (~R$ 500–600)
+**Escolhido:  SSD Sandisk Plus - 500GB, NVMe, M.2 2280**  (R\$ 599,99) - [Amazon BR](https://www.amazon.com.br/SanDisk-SSD-Plus-NVMe-SDSSDA3N-500G-G26/dp/B0CN3PBS2Z?ufe=app_do%3Aamzn1.fos.a492fd4a-f54d-4e8d-8c31-35e0a04ce61e&th=1)
+
+![1784064694321](assets/ssd-nvme-sandisk.png)
 
 - Requisito real do Godot é baixíssimo: **1,5 GB**.
 - **500 GB** é escolha de **conforto e futuro**, não de necessidade: comporta sistema operacional, ferramentas de desenvolvimento, arquivos de projeto, *builds* exportadas e expansão futura.
@@ -144,7 +146,9 @@ Cadeia lógica de decisão: **processador define o socket > socket define os chi
 
 ### Fonte de alimentação
 
-**Escolhida: Fonte ATX 500 W Fortrek Black Hawk — PFC Ativo, 80 Plus Bronze** (~R$ 219,99) — [Amazon BR](https://www.amazon.com.br/Fonte-BLACK-Bronze-Ativo-Fortrek/dp/B08SW8BFRW).
+**Escolhida: Fonte ATX 500 W Fortrek Black Hawk - PFC Ativo, 80 Plus Bronze** (~R$ 219,99) - [Amazon BR](https://www.amazon.com.br/Fonte-BLACK-Bronze-Ativo-Fortrek/dp/B08SW8BFRW).
+
+![1784160055984](assets/fonte-atx-500w.png)
 
 **Justificativas:**
 
@@ -164,10 +168,12 @@ Cadeia lógica de decisão: **processador define o socket > socket define os chi
 
 ### Gabinete
 
-**Escolhido: Gabinete Office Fortrek GO22 Premium Pret** (R\$ **225**,**70**)
+**Escolhido: Gabinete Office Fortrek GO22 Premium Pret** (R\$ **225**,**70**) - [Amazon BR](https://www.amazon.com.br/Gabinete-Office-Fortrek-Premium-Preto/dp/B0G15FK9SN?s=computers&ufe=app_do%3Aamzn1.fos.2b4f80ea-3310-4d2c-80ab-309ecec12fae)
 
-- **Compatível com placa-mãe Micro-ATX (mATX)** — formato da Gigabyte B550M AORUS ELITE.
-- **Espaço para a GPU** — a RX 580 é uma placa **maior, de dois slots e ~24 cm** de comprimento; é preciso conferir o **comprimento máximo de GPU** suportado pelo gabinete (a maioria dos mATX comporta, mas convém checar a ficha do modelo).
+![1784160529154](image/README/1784160529154.png)
+
+- **Compatível com placa-mãe Micro-ATX (mATX)** — formato da Gigabyte A520M K V2.
+- **Espaço para a GPU** — a RX 580 é uma placa **maior, de dois slots e ~24 cm** de comprimento, modelo tem 30cm (300mm).
 - **Fluxo de ar adequado** (com ao menos um fan frontal e um traseiro) — importante para dissipar o calor em uso prolongado de desenvolvimento.
 - **Baias/suportes** para SSD M.2 (na placa-mãe) e futura expansão de armazenamento.
 - Escolha por **custo-benefício**, priorizando ventilação e compatibilidade de formato em vez de estética.
@@ -178,8 +184,17 @@ Cadeia lógica de decisão: **processador define o socket > socket define os chi
 
 Itens necessários para operar a máquina (não cobertos pelos requisitos do Godot, mas indispensáveis na prática):
 
-- **Monitor LG 24MS500 24” IPS 100Hz Full HD HDMI 2x** — resolução suficiente para o editor do Godot com bom espaço de trabalho e custo acessível (~R$ 549,00), checar na [Amazon](https://www.amazon.com.br/Monitor-Gamer-LG-24MS500-100Hz/dp/B0DF2WSGF6?ufe=app_do%3Aamzn1.fos.25548f35-0de7-44b3-b28e-0f56f3f96147).
-- **Combo Teclado e Mouse sem fio Logitech MK235 com Conexão USB, Pilhas Inclusas e Layout ABNT2: Teclado + mouse** — periféricos básicos com fio, custo-benefício (~R$ 135,99 o conjunto). Não existem grandes requisitos para o mouse e teclado. Checar preço na [Amazon](https://www.amazon.com.br/Teclado-Nanoreceptor-Inclusas-Logitech-Teclados/dp/B07643MPGS?s=computers&ufe=app_do%3Aamzn1.fos.db68964d-7c0e-4bb2-a95c-e5cb9e32eb12)
+- **Monitor LG 24MS500 24” IPS 100Hz Full HD HDMI 2x** — resolução suficiente para o editor do Godot com bom espaço de trabalho e custo acessível (~R$ 531,00). Fonte: [Amazon](https://www.amazon.com.br/Monitor-Gamer-LG-24MS500-100Hz/dp/B0DF2WSGF6?ufe=app_do%3Aamzn1.fos.25548f35-0de7-44b3-b28e-0f56f3f96147).
+
+![1784160398469](assets/monitor.png)
+
+- **TECLADO MECÂNICO GAMER REDRAGON VALHEIM ILUMINAÇÃO RAINBOW PRETO SWITCH BROWN K608-R (PT-BROWN)** - teclado mecânico de entrada com switch silencioso mas que ainda possui feedback tátil. Preço razoável (~R$ **189**,**00**). Fonte: [Amazon](https://www.amazon.com.br/MEC%C3%82NICO-REDRAGON-ILUMINA%C3%87%C3%83O-K608-R-PT-BROWN/dp/B0DG6HGF93)
+
+![1784160360232](assets/teclado.png)
+
+- **Mouse Sem Fio Logitech Signature M650** - formato ergonômico, silencioso, botões personalizáveis. Preço razoável dado conforto e durabilidade (~R\$ 159,19). Fonte: [Amazon BR](https://www.amazon.com.br/Logitech-Signature-Silencioso-Personaliz%C3%A1veis-Bluetooth/dp/B09NQNWT76?s=electronics&ufe=app_do%3Aamzn1.fos.db68964d-7c0e-4bb2-a95c-e5cb9e32eb12&th=1)
+
+![1784161528303](assets/mouse.png)
 
 > Os periféricos foram dimensionados pelo **custo-benefício**, sem exigências especiais além de conforto e confiabilidade — o Godot não impõe requisitos específicos de entrada/saída.
 
@@ -189,33 +204,34 @@ Itens necessários para operar a máquina (não cobertos pelos requisitos do God
 
 ### Gabinete (torre) — componentes internos
 
-| Componente                          | Escolha                                   | Preço mínimo                 |
-| ----------------------------------- | ----------------------------------------- | ------------------------------ |
-| CPU                                 | AMD Ryzen 5 5500                          | R\$ 559,99                     |
-| Placa-mãe                          | Gigabyte A520M K V2                       | R\$ 549,00                     |
-| Memória                            | Kingston Fury Beast 2×8 GB 3200 MHz      | R\$ 898,00                     |
-| GPU                                 | AMD Radeon RX 580 8GB                     | R\$ 1.189,99                   |
-| Armazenamento                       | SSD NVMe M.2 500 GB                       | R\$ 600,00                     |
-| Fonte                               | Fortrek Black Hawk 500 W 80+ Bronze       | R\$ 219,99                     |
-| Cooler                              | AMD Wraith Stealth (incluso)              | R\$ 0,00                       |
-| Gabinete                            | Gabinete Office Fortrek GO22 Premium Pret | R\$ **225**,**70** |
-| **Subtotal (só a máquina)** |                                           | **R\$ 4.136,97**         |
+| Componente                          | Escolha                                   | Preço                 |
+| ----------------------------------- | ----------------------------------------- | ---------------------- |
+| CPU                                 | AMD Ryzen 5 5500                          | R\$ 559,99             |
+| Placa-mãe                          | Gigabyte A520M K V2                       | R\$ 373,00            |
+| Memória                            | Kingston Fury Beast 2×8 GB 3200 MHz      | R\$ 898,00             |
+| GPU                                 | AMD Radeon RX 580 8GB                     | R\$ 1.189,99           |
+| Armazenamento                       | SSD Sandisk Plus - 500GB, NVMe, M.2 2280  | R\$ 599,99             |
+| Fonte                               | Fortrek Black Hawk 500 W 80+ Bronze       | R\$ 219,99             |
+| Cooler                              | AMD Wraith Stealth (incluso)              | R\$ 0,00               |
+| Gabinete                            | Gabinete Office Fortrek GO22 Premium Pret | R\$ 225,70            |
+| **Subtotal (só a máquina)** |                                           | **R\$ 4.066,68** |
 
 ### Periféricos
 
-| Componente                        | Escolha          | Preço mínimo       | Preço máximo         |
-| --------------------------------- | ---------------- | -------------------- | ---------------------- |
-| Monitor                           | Full HD 23"–24" | R\$ 700,00           | R\$ 900,00             |
-| Teclado + mouse                   | Conjunto com fio | R\$ 100,00           | R\$ 200,00             |
-| **Subtotal (periféricos)** |                  | **R\$ 800,00** | **R\$ 1.100,00** |
+| Componente                        | Escolha                                                                                            | Preço                          |
+| --------------------------------- | -------------------------------------------------------------------------------------------------- | ------------------------------- |
+| Monitor                           | Monitor LG 24MS500 24” IPS 100Hz Full HD HDMI 2x                                                  | R\$ 531,00                     |
+| Teclado                           | TECLADO MECÂNICO GAMER REDRAGON VALHEIM ILUMINAÇÃO RAINBOW PRETO SWITCH BROWN K608-R (PT-BROWN) | R\$ **189**,**00** |
+| Mouse                             | Mouse Sem Fio Logitech Signature M650                                                              | R\$ 159,19                     |
+| **Subtotal (periféricos)** |                                                                                                    | **R\$ 879,19**           |
 
 ### Total geral
 
-|                  | Preço mínimo         | Preço máximo         |
-| ---------------- | ---------------------- | ---------------------- |
-| Máquina (torre) | R\$ 4.136,97           | R\$ 4.166,97           |
-| Periféricos     | R\$ 800,00             | R\$ 1.100,00           |
-| **TOTAL**  | **R\$ 4.936,97** | **R\$ 5.266,97** |
+|                  | Preço                 |
+| ---------------- | ---------------------- |
+| Máquina (torre) | R\$ 4.066,68           |
+| Periféricos     | R\$ 879,19            |
+| **TOTAL**  | **R\$ 4.936,97** |
 
 > ⚠️ CPU e fonte (Amazon BR) e GPU (Kabum) têm preço de cotação; placa-mãe, memória e SSD ainda são **estimativas de faixa de mercado** em levantamento. Reconferir todos os preços próximo à data da apresentação — os totais acima se ajustam conforme os valores finais.
 
