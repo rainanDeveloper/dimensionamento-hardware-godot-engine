@@ -139,8 +139,7 @@ Cadeia lógica de decisão: **processador define o socket > socket define os chi
 
 - Requisito real do Godot é baixíssimo: **1,5 GB**.
 - **500 GB** é escolha de **conforto e futuro**, não de necessidade: comporta sistema operacional, ferramentas de desenvolvimento, arquivos de projeto, *builds* exportadas e expansão futura.
-- **NVMe (e não SATA)** foi escolhido pela **velocidade** — reduz diretamente o tempo de carregamento do editor e de exportação de *builds*, algo que se repete o tempo todo durante o desenvolvimento.
-- **Ressalva de barramento:** com o Ryzen 5 5500 (PCIe 3.0), o SSD NVMe roda em **PCIe 3.0** (~3.500 MB/s), não em PCIe 4.0. Ainda assim é **muito mais rápido que um SSD SATA** (~550 MB/s), então o ganho principal — reduzir tempo de carregamento e de exportação — se mantém.
+- **NVMe (e não SATA)** foi escolhido pela **velocidade -** reduz diretamente o tempo de carregamento do editor e de exportação de *builds*, algo que se repete o tempo todo durante o desenvolvimento. Tem o fator da latência também - o tempo para o hardware responder à um pedido de leitura/escrita. Para um software como o Godot que desenvolve projetos de jogos, isso faz MUITA diferença, uma vez que facilmente esses projetos atingem milhares à dezenas de milhares de arquivos, e quando o projeto abre, muitos arquivos serão lidos de uma só vez.
 
 ---
 
