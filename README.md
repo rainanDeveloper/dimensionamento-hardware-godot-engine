@@ -169,7 +169,7 @@ Cadeia lógica de decisão: **processador define o socket > socket define os chi
 
 **Escolhido: Gabinete Office Fortrek GO22 Premium Pret** (R\$ **225**,**70**) - [Amazon BR](https://www.amazon.com.br/Gabinete-Office-Fortrek-Premium-Preto/dp/B0G15FK9SN?s=computers&ufe=app_do%3Aamzn1.fos.2b4f80ea-3310-4d2c-80ab-309ecec12fae)
 
-![1784160529154](image/README/1784160529154.png)
+![1784160529154](assets/gabinete.png)
 
 - **Compatível com placa-mãe Micro-ATX (mATX)** — formato da Gigabyte A520M K V2.
 - **Espaço para a GPU** — a RX 580 é uma placa **maior, de dois slots e ~24 cm** de comprimento, modelo tem 30cm (300mm).
